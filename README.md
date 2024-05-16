@@ -1,5 +1,7 @@
 # سیستم اعلام وضعیت بسته‌های پستی
 
+<div dir="rtl" style="text-align: right;">
+
 این پروژه یک سیستم اعلام وضعیت بسته‌های پستی است که با استفاده از دو الگوی طراحی Strategy و State پیاده‌سازی شده است.
 
 ## الگوی Strategy
@@ -99,18 +101,17 @@ public class SingletonPackage {
 ```
 # اصول SOLID و الگوی Singleton
 
-## Single Responsibility Principle (SRP)
+### Single Responsibility Principle (SRP)
 الگوی Singleton این اصل را نقض می‌کند، زیرا علاوه بر وظیفه اصلی کلاس، وظیفه مدیریت نمونه‌سازی را نیز بر عهده می‌گیرد.
 
-## Open/Closed Principle (OCP)
+### Open/Closed Principle (OCP)
 الگوی Singleton این اصل را نقض می‌کند، زیرا برای تغییر رفتار Singleton (مثل نحوه نمونه‌سازی یا مدیریت نمونه‌ها) باید کد کلاس تغییر کند، نه اینکه به راحتی قابل توسعه باشد.
 
-## Liskov Substitution Principle (LSP)
+### Liskov Substitution Principle (LSP)
 الگوی Singleton این اصل را تحقق نمی‌بخشد، زیرا ممکن است جایگزینی کلاس Singleton با زیرکلاس آن، رفتار ناخواسته‌ای ایجاد کند، خصوصاً وقتی که زیرکلاس‌ها نیاز به نمونه‌های مجزا داشته باشند.
 
-## Interface Segregation Principle (ISP)
+### Interface Segregation Principle (ISP)
 الگوی Singleton معمولاً این اصل را نقض نمی‌کند، زیرا اغلب با رابط‌ها سروکار ندارد. اما اگر Singleton چندین رابط را پیاده‌سازی کند، باید دقت کرد که هر رابط وظایف خاص خود را داشته باشد.
 
-## Dependency Inversion Principle (DIP)
+### Dependency Inversion Principle (DIP)
 الگوی Singleton می‌تواند این اصل را نقض کند، زیرا اغلب وابستگی‌های سخت به کلاس Singleton ایجاد می‌کند که باعث می‌شود تست‌پذیری و انعطاف‌پذیری کاهش یابد.
-
