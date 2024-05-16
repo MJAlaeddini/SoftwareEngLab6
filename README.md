@@ -1,5 +1,6 @@
 # سیستم اعلام وضعیت بسته‌های پستی
 
+<div style="direction: rtl; text-align: right;">
 این پروژه یک سیستم اعلام وضعیت بسته‌های پستی است که با استفاده از دو الگوی طراحی Strategy و State پیاده‌سازی شده است.
 
 ## الگوی Strategy
@@ -114,3 +115,4 @@ public class SingletonPackage {
 ## Dependency Inversion Principle (DIP)
 الگوی Singleton می‌تواند این اصل را نقض کند، زیرا اغلب وابستگی‌های سخت به کلاس Singleton ایجاد می‌کند که باعث می‌شود تست‌پذیری و انعطاف‌پذیری کاهش یابد.
 
+</div>
