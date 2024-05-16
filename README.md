@@ -115,3 +115,5 @@ public class SingletonPackage {
 
 ### Dependency Inversion Principle (DIP)
 الگوی Singleton می‌تواند این اصل را نقض کند، زیرا اغلب وابستگی‌های سخت به کلاس Singleton ایجاد می‌کند که باعث می‌شود تست‌پذیری و انعطاف‌پذیری کاهش یابد.
+
+</div>
